@@ -2,8 +2,9 @@
 
 Este documento tem como propósito ajudar CRMs/Sistemas/Plataformas/Softwares do mercado Imobiliário e Automotivo a serem integrados com a OLX, para que eles recebam automaticamente os leads gerados na OLX. O sistema de geração de leads **não** contempla o chat da OLX ou leads de telefone/ligação, sendo então restrito apenas aos chamados 'leads de email'.
 
+Um lead é uma solicitação de contato, feita por um comprador no portal OLX. O lead então é entregue ao anunciante com informações básicas para que o contato seja feita, como nome, email, telefone, etc.
 
-### Não tenho integração de leads com a OLX ainda
+### Como integrar com a OLX?
 
 Se você ainda não está integrado com a OLX para recebimento de leads, deverá disponibilizar um endpoint para a OLX homologar a integração de leads.
 
@@ -18,7 +19,7 @@ Recomendamos essa estrutura especificamente para sistemas integrados que serão 
 
 ### Envio de leads
 
-Os dados dos leads serão enviados via protocolo HTTP com o verbo POST com payload em formato JSON para o endpoint especificado para o cliente.
+Os dados dos leads serão enviados via protocolo HTTP ou HTTPS com o verbo POST com payload em formato JSON para o endpoint especificado para o cliente.
 
 Cada lead será enviado de forma individual a medida que forem gerados na plataforma Olx.
   
@@ -29,6 +30,8 @@ Nosso controle de entrega de leads será feito com base no status code do proto
 * **3XX, 4XX ou 5XX**: Indica que houve erro no recebimento do lead.
 
 A OLX guardará essa resposta da entrega do lead para eventual *trouleshoot*. A priori, a OLX não tem política de reenvio ou reprocessamento de leads que não forem recebidos.
+
+É recomendável que seja enviada um `responseId`, para identificar o recebimento do lead e a resposta devolvida referente a esse lead recebido.
 
 
 ### Payload
