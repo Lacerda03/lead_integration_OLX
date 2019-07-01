@@ -21,7 +21,7 @@ Recomendamos essa estrutura especificamente para sistemas integrados que serão 
 
 Os dados dos leads serão enviados via protocolo HTTP ou HTTPS com o verbo POST com payload em formato JSON para o endpoint especificado para o cliente.
 
-Cada lead será enviado de forma individual a medida que forem gerados na plataforma Olx.
+Cada lead será enviado de forma individual a medida que forem gerados na plataforma OLX.
   
 ### Status code
 
@@ -53,7 +53,8 @@ Segue exemplo de um JSON para um lead enviado:
   "name": "Nome do cliente",
   "email": "email.docliente@gmail.com",
   "phone": "21 9999-9999",
-  "message": "Olá, gostaria de saber mais informações sobre o anúncio a1234", "createdAt": "2019-02-12T14:30:00.500Z"
+  "message": "Olá, gostaria de saber mais informações sobre o anúncio a1234", 
+  "createdAt": "2019-02-12T14:30:00.500Z"
 }
 ```
 
