@@ -29,7 +29,7 @@ Nosso controle de entrega de leads será feito com base no status code do proto
 * **2XX**: Indica que o lead foi recebido com sucesso.
 * **3XX, 4XX ou 5XX**: Indica que houve erro no recebimento do lead.
 
-A OLX guardará essa resposta da entrega do lead para eventual *trouleshoot*. A priori, a OLX não tem política de reenvio ou reprocessamento de leads que não forem recebidos.
+A OLX guardará essa resposta da entrega do lead para eventual *troubleshoot*. A priori, a OLX não tem política de reenvio ou reprocessamento de leads que não forem recebidos.
 
 É recomendável que seja enviada um `responseId`, para identificar o recebimento do lead e a resposta devolvida referente a esse lead recebido.
 
@@ -64,6 +64,6 @@ As requisições para o endpoint estão configuradas com timeout de 5 segundo
 
 ## Homologação, dúvidas e resolução de problemas
 
-Assim que você realizar a construção do endpoint e estiver pronto para homologar, entre em contato com renato.cairo@olxbr.com para realizarmos os testes iniciais.
+Assim que você realizar a construção do endpoint e estiver pronto para homologar, entre em contato com suporteintegrador@olxbr.com para realizarmos os testes iniciais.
 
-Caso tenham alguma dúvida ou queiram resolver problema, entrem em contato com renato.cairo@olxbr.com ou suporteintegrador@olxbr.com.
+Caso tenham alguma dúvida ou queiram resolver problema, entrem em contato com suporteintegrador@olxbr.com
