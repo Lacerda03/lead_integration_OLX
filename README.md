@@ -13,9 +13,9 @@ A OLX requer que cada anunciante tenha um endpoint único. Recomendamos estrutur
 * https://seudominio.com.br/olx/lead/TOKEN
 * https://TOKEN.seudominio.com.br/olx/lead
 
-O `TOKEN`, nestes exemplos, é o identificador do anunciante na base do sistema ou crm que irá receber o lead. Pode ser utilizado para identificar um determinado cliente da base.
+O `TOKEN`, nestes exemplos, é o identificador do anunciante na base do sistema ou CRM que receberá o lead. Pode ser utilizado para identificar um determinado cliente da base.
 
-Recomendamos essa estrutura especificamente para sistemas integrados que serão usados por mais do que um anunciante (isso normalmente acontece quando um sistema de mercado é contratado por diversos anunciantes ou quando um sistema é usado por um anunciante que tem filiais e quer manter controle desse contexto.
+Recomendamos essa estrutura especificamente para sistemas integrados que serão usados por mais do que um anunciante (isso normalmente acontece quando um sistema de mercado é contratado por diversos anunciantes ou quando um sistema é usado por um anunciante que tem filiais e quer manter controle desse contexto).
 
 ### Envio de leads
 
@@ -37,13 +37,16 @@ A OLX guardará essa resposta da entrega do lead para eventual *troubleshoot*. A
 ### Payload
 
 O JSON enviado na integração de leads tem os seguintes campos:
-* `source`: Origem do lead. No caso sempre será OLX. Mas serve para fazer a correta atribuição do lead.
-* `adId`: Código identificador do anúncio na base do cliente
-* `name`: Nome do cliente que entrou em contato
-* `email`: Email do cliente que entrou em contato
-* `phone`: Telefone do cliente que entrou em contato (campo opcional)
-* `message`: Mensagem enviada pelo cliente
-* `createdAt`: Data de criação do lead
+
+| Parâmetro | Obrigatório | Descrição |
+|-------------|-------------|---------------------------------------------------------------------------------------------------------------|
+| `source` | Sim | Origem do lead. Serve para fazer a correta atribuição do lead. Sempre enviaremos o valor `OLX`. |
+| `adId` | Sim | É o identificador do anúncio, para que o anunciante saiba o anúncio relacionado a esse lead. |
+| `name` | Sim | Nome do cliente que entrou em contato. |
+| `email` | Sim | Email do cliente que entrou em contato. |
+| `phone` | Não | Telefone do cliente que entrou em contato. DDD opcional.<br>Ex: 11941371206 (com DDD) ou 941371206 (sem DDD). |
+| `message` | Sim | Mensagem enviada pelo cliente. |
+| `createdAt` | Sim | Data e hora da geração do lead. |
 
 Segue exemplo de um JSON para um lead enviado:
 ```
@@ -63,6 +66,8 @@ As requisições para o endpoint estão configuradas com timeout de 5 segundo
 
 
 ## Homologação, dúvidas e resolução de problemas
+
+Para a homologação, entre em contato com suporteintegrador@olxbr.com. Recomendamos que você já tenha alinhado com um 
 
 Assim que você realizar a construção do endpoint e estiver pronto para homologar, entre em contato com suporteintegrador@olxbr.com para realizarmos os testes iniciais.
 
