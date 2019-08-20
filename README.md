@@ -30,7 +30,7 @@ Cada lead será enviado de forma individual a medida que forem gerados na plata
 | `adId` | Sim | É o identificador do anúncio, para que o anunciante saiba o anúncio relacionado a esse lead. |
 | `name` | Sim | Nome do cliente que entrou em contato. |
 | `email` | Sim | Email do cliente que entrou em contato. |
-| `phone` | Não | Telefone do cliente que entrou em contato. DDD opcional.<br>Ex: 11941371206 (com DDD) ou 941371206 (sem DDD). |
+| `phone` | Não | Telefone do cliente que entrou em contato. Sequência numérica de até 13 caracteres. Telefones podem vir com ou sem DDD. |
 | `message` | Sim | Mensagem enviada pelo cliente. |
 | `createdAt` | Sim | Data e hora da geração do lead. |
 
