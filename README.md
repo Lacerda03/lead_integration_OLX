@@ -42,7 +42,7 @@ Segue exemplo de um JSON para um lead enviado:
   "adId": "a1234",
   "name": "Nome do cliente",
   "email": "email.docliente@gmail.com",
-  "phone": "21 9999-9999",
+  "phone": "2199999999",
   "message": "Olá, gostaria de saber mais informações sobre o anúncio a1234", 
   "createdAt": "2019-02-12T14:30:00.500Z"
 }
