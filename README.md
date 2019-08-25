@@ -1,6 +1,6 @@
 # Documentação para a Integração de Leads com a OLX
 
-Este documento tem como propósito ajudar CRMs/Sistemas/Plataformas/Softwares do mercado Imobiliário e Automotivo a serem integrados com a OLX, para que eles recebam automaticamente os leads gerados na OLX. Um lead é uma solicitação de contato, feita por um comprador no portal OLX. O lead então é entregue ao anunciante com informações básicas para que o contato seja feita, como nome, email, telefone, etc.
+Este documento tem como propósito ajudar CRMs/Sistemas/Plataformas/Softwares do Mercado Imobiliário e Automotivo a serem integrados com a OLX, para que eles recebam automaticamente os leads gerados na OLX. Um lead é uma solicitação de contato, feita por um comprador no portal OLX. O lead então é entregue ao anunciante com informações básicas para que o contato seja feita, como nome, email, telefone, etc.
 
 **Importante**: O sistema de integração de leads está restrito aos chamados "leads de emails" e só funciona para anunciantes que configurarem suas contas para receberem lead de email ao invés de chats. Não há como o anunciante receber um lead de email via integração e continuar com o chat. Para receber o lead de email ele precisa configurar sua conta para essa modalidade de contato.
 
