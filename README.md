@@ -67,9 +67,9 @@ As requisições para o endpoint estão configuradas com timeout de 5 segundo
 
 Para a homologação, entre em contato com suporteintegrador@olxbr.com apenas quando você já tiver:
 
-1) Um endpoint para homologação preparado
-2) Alinhado com um anunciante OLX que usa seu sistema sobre a homologação (uma vez que ele pode receber leads de teste em sua conta)
-3) Confirmado com esse anunciante que ele recebe leads de email (e não chat) na OLX
-4) Identificado o CNPJ desse anunciante (que usaremos internamente para identificar o anunciante e realizarmos o cadastro aqui na OLX)
+1) Um endpoint para homologação preparado;
+2) Alinhado com um anunciante OLX que usa seu sistema sobre a homologação (uma vez que ele pode receber leads de teste em sua conta);
+3) Confirmado com esse anunciante que ele recebe leads de email (e não chat) na OLX;
+4) Identificado o CNPJ desse anunciante (que usaremos internamente para identificar o anunciante e realizarmos o cadastro aqui na OLX).
 
 Com esses requisitos satisfeitos, por favor entre em contato com suporteintegrador@olxbr.com e nós realizaremos os testes para a homologação.
