@@ -48,6 +48,23 @@ Segue exemplo de um JSON para um lead enviado:
 }
 ```
 
+### Restrições atuais
+
+Atualmente, a OLX só suporta envio de leads via integração para algumas de suas categorias:
+
+| Categoria | Subcategoria | Código da Categoria |
+|---------------|-----------------------------|---------------------|
+| Imóveis | Apartamentos | `1020` |
+| Imóveis | Casas | `1040` |
+| Imóveis | Aluguel de quartos | `1060` |
+| Imóveis | Temporada | `1080` |
+| Imóveis | Terrenos, sítios e fazendas | `1100` |
+| Imóveis | Comércio e indústria | `1120` |
+| Autos e peças | Carros, vans e utilitários | `2020` |
+
+Além disso, só serão enviados leads para anúncios cadastrados via integração. Anúncios cadastrados manualmente não podem ser enviados via integração de leads.
+
+
 ### Status code
 
 Nosso controle de entrega de leads será feito com base no status code do protocolo HTTP: 
