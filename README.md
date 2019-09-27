@@ -26,7 +26,7 @@ Cada lead será enviado de forma individual a medida que forem gerados na plata
 
 | Parâmetro | Obrigatório | Descrição |
 |-------------|-------------|---------------------------------------------------------------------------------------------------------------|
-| `source` | Sim | Origem do lead. Serve para fazer a correta atribuição do lead. Sempre enviaremos o valor `OLX`. |
+| `source` | Sim | Origem do lead. Serve para fazer a correta atribuição do lead. Sempre enviaremos o valor `olx`. |
 | `adId` | Sim | É o identificador do anúncio, para que o anunciante saiba o anúncio relacionado a esse lead. |
 | `name` | Sim | Nome do cliente que entrou em contato. |
 | `email` | Sim | Email do cliente que entrou em contato. |
